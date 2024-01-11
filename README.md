@@ -3,6 +3,7 @@
 <h2>How to run</h2>
 
 ```bash
+  cp .env.example .env
   npm install
   npm run dev
 ```
