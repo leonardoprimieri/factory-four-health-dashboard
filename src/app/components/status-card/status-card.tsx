@@ -24,7 +24,7 @@ export const StatusCard = ({ name }: Props) => {
       error: "bg-red-500",
     };
 
-    return variants[data.status ?? "error"];
+    return variants[data.status];
   };
 
   const statusMessage = data.status === "success" ? "Healthy" : "Error";

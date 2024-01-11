@@ -13,9 +13,9 @@ const fetcher = async (name: string): Promise<Endpoint> => {
         status: "success",
       };
     })
-    .catch((err) => {
+    .catch(() => {
       return {
-        success: "error",
+        status: "error",
         name,
       };
     });
