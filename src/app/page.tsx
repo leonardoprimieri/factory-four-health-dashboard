@@ -1,3 +1,13 @@
+"use client";
+import { StatusCard } from "./components/status-card/status-card";
+import { API_NAMES } from "./hooks/constants/api-names.const";
+
 export default function Home() {
-  return <h1>hello</h1>;
+  return (
+    <div className="flex flex-wrap justify-center items-center">
+      {API_NAMES.map((name) => (
+        <StatusCard key={name} name={name} />
+      ))}
+    </div>
+  );
 }
