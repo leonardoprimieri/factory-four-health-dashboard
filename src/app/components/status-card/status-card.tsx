@@ -1,5 +1,5 @@
-import { useGetEndpointsHealth } from "~/app/hooks/use-get-endpoints-health";
 import { Loader } from "../loader/loader";
+import { useGetEndpointsHealth } from "./hooks/use-get-endpoints-health";
 
 type Props = {
   name: string;

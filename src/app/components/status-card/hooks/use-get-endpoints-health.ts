@@ -1,10 +1,10 @@
-import axios from "axios";
 import useSWR from "swr";
-import { Endpoint } from "../domain/entities/endpoint";
+import { Endpoint } from "../../../domain/entities/endpoint";
 import { REQUEST_TIMEOUT_VALUE } from "~/config/request-timeout-value";
+import { httpClient } from "~/infra/http-client";
 
 const fetcher = async (name: string): Promise<Endpoint> => {
-  const res = await axios
+  const res = await httpClient
     .get(`https://api.factoryfour.com/${name}/health/status`)
     .then((res) => {
       return {

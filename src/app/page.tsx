@@ -1,6 +1,6 @@
 "use client";
 import { StatusCard } from "./components/status-card/status-card";
-import { API_NAMES } from "./hooks/constants/api-names.const";
+import { API_NAMES } from "./components/status-card/hooks/constants/api-names.const";
 
 export default function Home() {
   return (
